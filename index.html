@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meron – Interface IA</title>
+    <script type="module" crossorigin src="/assets/index-D5OJ4vxd.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Df8llmZn.css">
+  </head>
+  <body class="page">
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <main id="main-content" class="layout">
+      <section class="intro">
+        <div class="intro__logo" role="img" aria-label="Icône cerveau stylisé">
+          <i class="intro__logo-icon" data-lucide="brain" aria-hidden="true"></i>
+        </div>
+        <p class="intro__title intro__title--highlight" role="heading" aria-level="1">Meron</p>
+        <h1 class="intro__subtitle intro__subtitle--lead">
+          Votre copilote IA pour créer et relancer vos projets.
+        </h1>
+      </section>
+
+      <section class="prompt" aria-label="Zone de requête">
+        <label class="prompt__label" for="prompt-input">Questionner rapidement l’IA</label>
+        <div class="prompt__field">
+          <input
+            id="prompt-input"
+            class="prompt__input"
+            type="text"
+            name="prompt"
+            placeholder="Questionner Meron..."
+            aria-describedby="prompt-actions"
+          />
+          <div id="prompt-actions" class="prompt__actions" role="list">
+            <button class="prompt__action" aria-label="Joindre un fichier" role="listitem">
+              <i class="icon" data-lucide="paperclip" aria-hidden="true"></i>
+            </button>
+            <button class="prompt__action" aria-label="Activer le microphone" role="listitem">
+              <i class="icon" data-lucide="mic" aria-hidden="true"></i>
+            </button>
+            <button class="prompt__action" aria-label="Ajouter une image" role="listitem">
+              <i class="icon" data-lucide="image" aria-hidden="true"></i>
+            </button>
+            <button class="prompt__action" aria-label="Ouvrir les outils" role="listitem">
+              <i class="icon" data-lucide="settings" aria-hidden="true"></i>
+            </button>
+          </div>
+          <button class="prompt__submit" aria-label="Envoyer la requête">
+            <i class="icon" data-lucide="send" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="projects__return" data-project-select>
+          <button
+            class="projects__return-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="projects-dropdown"
+          >
+            <span class="projects__return-label">Retourner sur un projet</span>
+            <span class="projects__return-icon" aria-hidden="true">
+              <i class="icon" data-lucide="chevron-down" aria-hidden="true"></i>
+            </span>
+          </button>
+          <div
+            id="projects-dropdown"
+            class="projects__return-panel"
+            role="region"
+            aria-label="Liste des projets récents"
+            hidden
+          >
+            <ul class="projects__list" role="list">
+              <li>
+                <button class="projects__item-button projects__item-button--active" type="button" data-project-label="DA pour Qualiopi">
+                  <span class="projects__item-icon" aria-hidden="true">
+                    <i class="icon" data-lucide="monitor" aria-hidden="true"></i>
+                  </span>
+                  <span class="projects__item-text">DA pour Qualiopi</span>
+                </button>
+              </li>
+              <li>
+                <button class="projects__item-button" type="button" data-project-label="Nouveau logo Atos">
+                  <span class="projects__item-icon" aria-hidden="true">
+                    <i class="icon" data-lucide="sparkles" aria-hidden="true"></i>
+                  </span>
+                  <span class="projects__item-text">Nouveau logo Atos</span>
+                </button>
+              </li>
+              <li>
+                <button class="projects__item-button" type="button" data-project-label="Iconographie Décathlon">
+                  <span class="projects__item-icon" aria-hidden="true">
+                    <i class="icon" data-lucide="brush" aria-hidden="true"></i>
+                  </span>
+                  <span class="projects__item-text">Iconographie Décathlon</span>
+                </button>
+              </li>
+              <li>
+                <button class="projects__item-button" type="button" data-project-label="Publicité Auchan">
+                  <span class="projects__item-icon" aria-hidden="true">
+                    <i class="icon" data-lucide="bar-chart-3" aria-hidden="true"></i>
+                  </span>
+                  <span class="projects__item-text">Publicité Auchan</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a class="projects__launch" href="#creation-projet" role="button">
+          <i class="icon" data-lucide="rocket" aria-hidden="true"></i>
+          <span class="projects__launch-label">Lancer un nouveau projet</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2025 Meron. Tous droits réservés.</p>
+      <a class="footer__link" href="#">Mentions légales</a>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.464.0"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
